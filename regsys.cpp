@@ -54,9 +54,6 @@ bool login(const list<User>& users ) {
     return 0;
 }
 
-
-
-
 int main() {
 
     list<User>users;
@@ -83,9 +80,7 @@ do {
 
     cout << "Invalid opt";
 }
-
-
-
+    
 } while (choice !=3);
 
 };
