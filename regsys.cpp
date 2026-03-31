@@ -45,13 +45,10 @@ bool login(const list<User>& users ) {
         if(user.login == username && user.pass == password ) {
             cout << "Login succseful" << username <<endl;
             return true;
-        } else {
-            cout << "Invalid data";
-            return false;
         }
     }
-
-    return 0;
+    cout << "Invalid data" << endl;
+    return false;
 }
 
 int main() {
