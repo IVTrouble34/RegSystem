@@ -3,12 +3,17 @@
 
 using namespace std;
 
+
+//Structure of users for data
+
 struct User {
     int id;
     string login;
     string pass;
 };
 
+
+//Function for register a new user
 void regsystem(list<User>& users) {
 
     User newUser;
@@ -31,6 +36,8 @@ void regsystem(list<User>& users) {
 
 };
 
+
+//Login function for checking if user exits or not
 bool login(const list<User>& users ) {
 
     std::string username, password;
@@ -51,6 +58,7 @@ bool login(const list<User>& users ) {
     return false;
 }
 
+//The main function wich runs simple text menu with a choice of Register, Login and exit the function
 int main() {
 
     list<User>users;
